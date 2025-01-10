@@ -72,3 +72,52 @@ print(sieveOfEratosthens(100))
 
 #clear code not mind, copied it from the internet
 
+#--------------------BASIC NUMBER 7--------------------#
+#Write a R program to print numbers from 1 to 100 and print "Fizz" for multiples of 3, print "Buzz for multiples of 5, and print "FizzBuzz for multiiples of both
+for (num in 1:100){
+  if (num %% 3 == 0 & num %% 5 == 0){
+    print("FizzBuzz")
+  }else if (num %% 3 == 0){
+    print("Fizz")
+  }else if(num %% 5 == 0){
+    print("Buzz")
+  }else{
+    print(num)
+  }
+  
+}
+#clear -> got some complications, i want to print the number as well as the Fizz, Buzz but its not working with paste() function maybe because the function can only take strings
+
+#--------------------BASIC NUMBER 8--------------------#
+#Write a R program to extract first 10 english letter in lower case and last 10 letters in upper case and extract letters between 22nd to 24th letters in upper case
+print(LETTERS[17:26])
+print(letters[1:10])
+print(LETTERS[22:24])
+
+#clear but there are some additional functions
+# t = tail[LETTERS,10]
+# h = head[letters,10]
+# print(t)
+# print(h)
+
+#--------------------BASIC NUMBER 9--------------------#
+#find the factors of a given number
+print_factors <- function(number){
+  for(i in 1: number){
+    if (number %% i == 0){
+      print(i)
+    }
+  }
+}
+
+print(print_factors(45))
+#clear - copied the code but understand how it works
+
+#--------------------BASIC NUMBER 10--------------------#
+#Write a R program to find the maximum and the minimum value of a given vector
+nums = c(10, 20, 30, 40, 50, 60)
+print(min(nums))
+print(max(nums))
+#clear - easy
+
+
